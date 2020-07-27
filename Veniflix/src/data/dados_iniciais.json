@@ -1,17 +1,17 @@
 {
   "categorias": [
     {
-      "titulo": "Front End",
-      "link": "https://www.alura.com.br/formacao-front-end",
-      "cor": "#6BD1FF",
+      "titulo": "Músicas",
+      "link": "https://www.youtube.com/watch?v=xELBOfd2lis",
+      "cor": "#343477",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "Músicas para ouvir durante a tarde",
+        "url": "https://www.youtube.com/watch?v=xELBOfd2lis"
       },
       "videos": [
         {
-          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+          "titulo": "Ronnie Hilton - Veni Vidi Vici",
+          "url": "https://www.youtube.com/watch?v=xELBOfd2lis"
         },
         {
           "titulo": "SEO com React",
