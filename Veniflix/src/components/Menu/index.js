@@ -1,5 +1,5 @@
 import React from 'react';
-import{Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import Logo from '../../assets/imagens/logo-Vediflix.png'
 import './menu.css'
 import Button from '../Button'
