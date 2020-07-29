@@ -2,25 +2,25 @@
   "categorias": [
     {
       "titulo": "Músicas",
-      "link": "https://www.youtube.com/watch?v=xELBOfd2lis",
+      "link": "https://www.youtube.com/watch?v=jAlnL8JHetY",
       "cor": "#343477",
       "link_extra": {
         "text": "Músicas para ouvir durante a tarde",
-        "url": "https://www.youtube.com/watch?v=xELBOfd2lis"
+        "url": "https://www.youtube.com/watch?v=jAlnL8JHetY"
       },
       "videos": [
-        {
-          "titulo": "Ronnie Hilton - Veni Vidi Vici",
-          "url": "https://www.youtube.com/watch?v=xELBOfd2lis"
-        },
         {
           "titulo": "Féloche - Silbo",
           "url": "https://www.youtube.com/watch?v=jAlnL8JHetY"
         },
         {
+          "titulo": "Ronnie Hilton - Veni Vidi Vici",
+          "url": "https://www.youtube.com/watch?v=xELBOfd2lis"
+        },
+        {
           "titulo": "PRECISO ME ENCONTRAR | Cowboy Bebop (カウボーイビバップ)",
           "url": "https://www.youtube.com/watch?v=Ymwj0zcqnDw"
-        },    
+        },
         {
           "titulo": "Mariya Takeuchi Plastic Love 竹内 まりや",
           "url": "https://www.youtube.com/watch?v=9Gj47G2e1Jc"
@@ -40,7 +40,7 @@
         {
           "titulo": "Base para aprender os frameworks",
           "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
-        }        
+        }
       ]
     },
     {
@@ -66,7 +66,7 @@
         {
           "titulo": "API: Dicionário do Programador",
           "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
-        }, 
+        },
         {
           "titulo": "Usando Git Direito",
           "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
