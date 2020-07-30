@@ -1,49 +1,80 @@
-import React from 'react';
-import Menu from './components/Menu'
-import dadosIniciais from './data/dados_iniciais.json';
-import BannerMain from './components/BannerMain';
-import Carousel from './components/Carousel';
-import Footer from './components/Footer';
+import React, { useState } from 'react';
 
+function getYouTubeId(youtubeURL: string) {
+  return youtubeURL.replace(/^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/, '$7');
+}
+
+interface IVideo {
+  url: string;
+  titulo: string;
+}
 
 function App() {
+  const videos: IVideo[] = [
+    {
+      url: 'https://www.youtube.com/watch?v=5MzOCxSWrrc',
+      titulo: 'Recriando o React em 20min',
+    }
+  ];
+
+  const [videosDoState, setVideosNoState] = useState<IVideo[]>([]);
+
   return (
-    <div style={{ background: "#141414" }}>
-      <Menu /> 
-
-      <BannerMain
-        videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
-        url={dadosIniciais.categorias[0].videos[0].url}
-        videoDescription={"Música de Ronnie Hilton de 1954 - Veni Vidi Vici"}
+    <main>
+      <img
+        className="logo"
+        alt="Logo"
+        src="https://raw.githubusercontent.com/imersao-alura/aluraflix/master/src/assets/img/Logo.png"
       />
 
-      <Carousel
-        ignoreFirstVideo
-        category={dadosIniciais.categorias[0]}
-      />
+      <form onSubmit={(event) => {
+        event.preventDefault();
 
-      <Carousel
-        category={dadosIniciais.categorias[1]}
-      />
+        setVideosNoState([
+          ...videosDoState,
+          {
+            url: 'https://www.youtube.com/watch?v=5MzOCxSWrrc',
+            titulo: 'Recriando o React em 20min',
+          }
+        ]);
+      }}>
+        <label>
+          <input type="" />
+          <span>Título do Vídeo</span>
+        </label>
 
-      <Carousel
-        category={dadosIniciais.categorias[2]}
-      />      
+        <label>
+          <input type="" />
+          <span>URL do Vídeo</span>
+        </label>
 
-      <Carousel
-        category={dadosIniciais.categorias[3]}
-      />      
+        <button type="submit">
+          Cadastrar
+        </button>
+      </form>
 
-      <Carousel
-        category={dadosIniciais.categorias[4]}
-      />      
 
-      <Carousel
-        category={dadosIniciais.categorias[5]}
-      />      
 
-      <Footer />
-    </div>
+      <section className="listaDeVideos">
+        <h2>
+          Vídeos cadastrados
+        </h2>
+        <ul>
+          {
+            videosDoState.map((video) => (
+              <a
+                className="card"
+                href={video.url}
+                style={{ backgroundImage: `url(https://img.youtube.com/vi/${getYouTubeId(video.url)}/maxresdefault.jpg)` }}>
+                <article>
+                  <h3 className="titulo">{video.titulo}</h3>
+                </article>
+              </a>
+            ))
+          }
+        </ul>
+      </section>
+    </main>
   );
 }
 
