@@ -21,7 +21,7 @@ function CadastroCategoria() {
 
   useEffect(() => {
     const URL = window.location.hostname.includes('localhost')
-      ? 'http://localhost:3000/categorias'
+      ? 'http://localhost:8080/categorias'
       : 'https://veniflix.herokuapp.com/categorias';
     fetch(URL)
       .then(async (respostaDoServer) => {
